@@ -7,37 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Upload/Download de Ficheiros</h1>
+    <div class="container">
+        <h1>Upload/Download de Ficheiro</h1>
 
-    <h2>Upload de Ficheiro</h2>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload File" name="submit">
-    </form>
+        <h2>Upload de Ficheiros</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload File" name="submit">
+        </form>
 
-    <h2>Download de Ficheiro</h2>
-    <ul>
-        <?php
-        $dir = "uploads/";
-        if (is_dir($dir)) {
-            if ($dh = opendir($dir)) {
-                while (($file = readdir($dh)) !== false) {
-                    if ($file != "." && $file != "..") {
-                        echo "<li><a href='download.php?file=$file'>$file</a></li>";
+        <h2>Download de Ficheiros</h2>
+        <ul>
+            <?php
+            $dir = "uploads/";
+            if (is_dir($dir)) {
+                if ($dh = opendir($dir)) {
+                    while (($file = readdir($dh)) !== false) {
+                        if ($file != "." && $file != "..") {
+                            echo "<li><a href='download.php?file=$file'>$file</a></li>";
+                        }
                     }
+                    closedir($dh);
                 }
-                closedir($dh);
             }
-        }
-        ?>
-    </ul>
+            ?>
+        </ul>
 
-    <h2>Importar Base de Dados</h2>
-    <form action="import_db.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="dbFile" id="dbFile">
-        <input type="submit" value="Import Database" name="submit">
-    </form>
-
+        <h2>Importar Base de Dados</h2>
+        <form action="import_db.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="dbFile" id="dbFile">
+            <input type="submit" value="Import Database" name="submit">
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
