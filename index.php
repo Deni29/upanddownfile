@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload/Download</title>
+    <title>Upload/Download de Ficheiros</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Upload/Download de Ficheiro</h1>
+        <h1>Upload/Download de Ficheiros</h1>
 
         <h2>Upload de Ficheiros</h2>
         <form action="upload.php" method="post" enctype="multipart/form-data">
