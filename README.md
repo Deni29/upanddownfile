@@ -11,6 +11,7 @@ This is a simple web application that allows users to upload and download files,
 ## Project Structure
 
 /project-root
+
 ├── index.php # Main page for uploading and downloading files
 
 ├── upload.php # Script to handle file uploads
