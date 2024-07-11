@@ -1,5 +1,27 @@
-# PHP Starter
+# File Upload/Download Application
 
-Quickly get started with [PHP](https://www.php.net/) using this starter! PHP is a popular general-purpose scripting language that is especially suited to web development.
+This is a simple web application that allows users to upload and download files, as well as import a PostgreSQL database. The application is built using PHP, CSS, JavaScript, and PostgreSQL, following Material Design principles.
 
-This starter starts a PHP web server on [localhost:8080](http://localhost:8080).
+## Features
+
+- **Upload Files:** Users can upload files to the server.
+- **Download Files:** Users can download files from the server.
+- **Import Database:** Users can import a PostgreSQL database.
+
+## Project Structure
+
+/project-root
+
+├── index.php # Main page for uploading and downloading files
+
+├── upload.php # Script to handle file uploads
+
+├── download.php # Script to handle file downloads
+
+├── import_db.php # Script to handle database import
+
+├── style.css # CSS file for styling
+
+├── script.js # JavaScript file for additional functionality
+
+└── /uploads # Directory to store uploaded files
