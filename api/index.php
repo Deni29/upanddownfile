@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload/Download de Ficheiros</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="api/style.css">
 </head>
 <body>
     <div class="container">
@@ -39,6 +39,5 @@
             <input type="submit" value="Import Database" name="submit">
         </form>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
