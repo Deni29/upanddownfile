@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>File Upload/Download</h1>
+    <h1>Upload/Download de Ficheiros</h1>
 
-    <h2>Upload File</h2>
+    <h2>Upload de Ficheiro</h2>
     <form action="upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload File" name="submit">
     </form>
 
-    <h2>Download Files</h2>
+    <h2>Download de Ficheiro</h2>
     <ul>
         <?php
         $dir = "uploads/";
@@ -32,7 +32,7 @@
         ?>
     </ul>
 
-    <h2>Import Database</h2>
+    <h2>Importar Base de Dados</h2>
     <form action="import_db.php" method="post" enctype="multipart/form-data">
         <input type="file" name="dbFile" id="dbFile">
         <input type="submit" value="Import Database" name="submit">
